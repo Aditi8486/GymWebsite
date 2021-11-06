@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM WEBSITE</title>
+    <link rel="stylesheet" href="project1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+
+            background: url('img/b5.jfif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Baloo Tammudu 2', 'cursive';
+            font-size: 25px;
+            color: white;
+        }
+
+        .main {
+            font-family: 'Baloo Tammudu 2', 'cursive';
+            font-size: 25px;
+        }
+
+
+
+        .left {
+
+            display: inline-block;
+            position: absolute;
+            top: 8px;
+            left: 35px;
+            width: 100px;
+            text-align: center;
+            font-size: 11px;
+
+        }
+
+        .img1 {
+            filter: invert(100%);
+            width: 100%;
+            height: 100%;
+        }
+
+        .left1{
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            transition-duration: 1s;
+            transition-delay:0.2s;
+            font-size: 1rem;
+        }
+        .left1:hover {
+
+            color: hotpink;
+            text-decoration: underline;
+            cursor: pointer;
+
+        }
+
+
+        .right {
+
+            display: inline-block;
+            position: absolute;
+            top: 2%;
+            right: 3%;
+            padding: 4px 10px;
+        }
+
+
+        .btn {
+
+            font-size: 19px;
+            color: white;
+            font-family: 'Baloo Tammudu 2', 'cursive';
+            border: 2.5px solid #eceaea;
+            background-color: black;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 1px 5px;
+            padding: 0.4px 10px;
+            height: 38px;
+            width: 100px;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            transition-duration: 2s;
+            transition-delay:0.3s;
+
+
+
+        }
+
+
+
+        .btn:hover {
+            text-align: center;
+            border: 4px solid rgb(0, 0, 185);
+            background-color:white;
+            color: rgb(1, 1, 199);
+            border-radius:13px;
+            font-weight: bolder;
+            font-size: 19.2px;
+
+        }
+
+        .btn:visited {
+            border: 2px solid rgb(18, 161, 18);
+            background-color: rgb(212, 211, 211);
+            text-decoration: underline;
+            border-radius: 20px;
+            font-weight: bold;
+            color: rgb(18, 161, 18);
+        }
+
+        .btn:active {
+            border: 2px solid rgb(57, 100, 243);
+            background-color: rgb(211, 209, 209);
+            text-decoration: underline;
+            border-radius: 20px;
+            font-style: bold;
+            color: rgb(57, 100, 243);
+        }
+
+
+
+        .mid {
+
+            display: block;
+            width: 45%;
+            margin: 5px auto;
+            padding: 1.2% 1.4%;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            font-family: 'Baloo Tammudu 2', 'cursive';
+            cursor: pointer;
+            font-size: 23px;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            transition-duration: 1s;
+            transition-delay:0.3s;
+        }
+
+        .navbar {
+
+            display: inline-block;
+
+        }
+
+        .navbar li {
+
+            display: inline-block;
+            font-family: 'Baloo Tammudu 2', 'cursive';
+            margin: 0.5px 18px;
+            padding: 3px 5px;
+        }
+
+        .navbar li a:hover {
+            color: rgb(141, 135, 135);
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: 22px;
+        }
+
+        .navbar li a:active {
+
+            color: rgb(56, 101, 250);
+            text-decoration: underline;
+            border: 2px solid rgb(56, 101, 250);
+            ;
+            background-color: black;
+            cursor: pointer
+        }
+
+        .navbar:visited {
+            color: rgb(18, 153, 13);
+            text-decoration: underline;
+            border: 2px solid rgb(18, 153, 13);
+            background-color: black;
+            cursor: pointer
+        }
+
+
+        .form {
+
+            border: 4px solid white;
+            width: 35%;
+            height: 22%;
+            margin: 3.5% 6.5%;
+            margin-left: 30rem;
+            padding: 1% 4.5%;
+            text-align: center;
+            border-radius: 25px;
+            font-size: 23px;
+        
+        }
+
+        .form input {
+            border: 3px solid black;
+            border-radius: 8px;
+            color: black;
+            font-family: 'Baloo Tammudu 2', 'cursive';
+            font-size: 19px;
+            width: 100%;
+            text-align: center;
+            margin: 1.5px 1.5px;
+            padding: 1px 1.5px;
+            height:2.6rem;
+        }
+
+
+
+
+        .btn2 {
+
+            background-color: black;
+            text-align: center;
+            width: 100%;
+            border: 2px solid white;
+            border-radius: 8px;
+            margin: 1.2% 1.5%;
+            padding: 2% 2.2%;
+            font-size: 23px;
+            color: white;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            transition-duration: 2s;
+            transition-delay:0.4s;
+        }
+
+
+
+        .btn2:hover {
+
+            cursor: pointer;
+            border-color: white;
+            background-color:blue;
+            color:white;
+            font-weight: bold;
+
+        }
+
+        .btn2:active {
+
+            border-color: rgb(2, 2, 216);
+            background-color: rgb(79, 79, 250);
+            text-decoration: underline;
+            cursor: pointer;
+            color: rgb(97, 97, 252);
+            font-weight: bolder;
+
+        }
+
+        #btn3 {
+            background-color: rgb(183, 184, 184);
+            margin: 1px 1px;
+            padding: 0px 0px;
+            text-align: center;
+            width: 100%;
+            border: 3.5px solid black;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 23px;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            transition-duration: 2s;
+            transition-delay:0.4s;
+            height:3.1rem;
+
+
+        }
+
+        #btn3:hover {
+
+            cursor: pointer;
+            border-color: white;
+            background-color: rgb(252, 0, 0);
+            color: white;
+            font-weight: bold;
+
+        }
+
+        #btn3:active {
+
+            border-color: rgb(2, 2, 216);
+            background-color: rgb(79, 79, 250);
+            text-decoration: underline;
+            cursor: pointer;
+            color: rgb(97, 97, 252);
+            font-weight: bold;
+
+        }
+
+
+        .heading {
+            color: white;
+            font-weight: bolder;
+            font-size: 26px;
+            margin-bottom: 3px;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            transition-duration: 0.7ss;
+            transition-delay:0.2s;
+
+        }
+
+        .heading:hover {
+            color: rgb(106, 106, 248);
+            font-weight: bolder;
+            cursor: pointer;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main">
+        <div class="left">
+            <img src="img/11247.jpg" alt="fitness" class="img1">
+            <div class="left1"></div>
+            <span class="left1">ADITI's &nbsp; GYM</span>
+        </div>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul class="navbar1">
+                    <li class="item"><a href="#" class="item1">Home</a></li>
+                    <li class="item"><a href="#" class="item1">About Us</a></li>
+                    <li class="item"><a href="#" class="item1">Fitness Calculator</a></li>
+                    <li class="item"><a href="#" class="item1">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us </button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="form">
+        <h3 class="heading">Join the best gym of Bhiwani now</h3>
+
+        <form action="backend.php">
+            <div class="form1">
+                <input type="text" class="details" placeholder="Enter your Name">
+            </div>
+            <div class="form1">
+                <input type="text" class="details" placeholder="Enter your Age">
+            </div>
+            <div class="form1">
+                <input type="text" class="details" placeholder="Enter your Gender">
+            </div>
+            <div class="form1">
+                <input type="text" class="details" placeholder="Enter your Locality">
+            </div>
+            <div class="form1">
+                <input type="text" class="details" placeholder="Enter your Email Id">
+            </div>
+            <div class="form1">
+                <input type="text" class="details" placeholder="Enter your Phone Number">
+            </div>
+            <div class="btn1">
+                <button class="btn2">Submit Now</button>
+            </div>
+            <div class="reset">
+                <input type="reset" id="btn3" value="Reset Now">
+            </div>
+    </div>
+    </form>
+    </div>
+
+
+</body>
+
+</html>
